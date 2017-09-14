@@ -1,0 +1,62 @@
+﻿/*simple-dialog*/
+.sdialog__mask {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  width: 100%;
+  z-index: 9998;
+}
+.sdialog__wrapper {
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  z-index: 9999;
+  -webkit-transform-origin: 0px 0px;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  max-width: 60%;
+}
+.sdialog__wrapper--skin-green {
+  background: rgba(96, 195, 171, 0.8);
+}
+.sdialog__wrapper--skin-block {
+  background-color: #f0f0f0;
+  color: #3d4245;
+}
+.sdialog__wrapper--skin-red {
+  background: rgba(255, 40, 40, 0.8);
+}
+.sdialog__content {
+  padding: 20px 20px;
+  text-align: center;
+}
+.sdialog__btns {
+  border-top: 1px solid #cdc7c7;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+}
+.sdialog__btns .sdialog__btn {
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1 auto;
+  display: block;
+  color: #999;
+  text-align: center;
+  padding: 15px 0px;
+  text-decoration:none;
+  background-color: transparent;
+  border: none;
+  min-width: 50%;
+}
+.sdialog__btns .sdialog__btn--ok {
+  color: #ff8903;
+  border-right: 1px solid #cdc7c7;
+}

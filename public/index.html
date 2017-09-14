@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>react-sdialog Demo</title>
+    <script type="text/javascript">!function(){function e(){var e={UCBrowser:function(){return navigator.userAgent.match(/UCBrowser/i)},MicroMessenger:function(){return navigator.userAgent.match(/MicroMessenger/i)},Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iPad:function(){return navigator.userAgent.match(/iPad/i)},iPhone:function(){return navigator.userAgent.match(/iPhone/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPod|iPad/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return e.Android()||e.BlackBerry()||e.iOS()||e.Opera()||e.Windows()}},n=window.screen.width,t=window.devicePixelRatio;e.UCBrowser()||e.MicroMessenger()&&!e.iPhone()?(n>610?document.querySelector("html").style.fontSize=n/t/10+"px":document.querySelector("html").style.fontSize=n/10+"px",e.any()||(document.querySelector("html").style.fontSize="75px")):e.iPhone()?document.querySelector("html").style.fontSize=n/10+"px":e.iPad()?document.querySelector("html").style.fontSize="75px":e.any()?n/10>70?document.querySelector("html").style.fontSize=n/t/10+"px":document.querySelector("html").style.fontSize=n/10+"px":window.innerWidth<=750?document.querySelector("html").style.fontSize=window.innerWidth/10+"px":document.querySelector("html").style.fontSize="75px"}e(),window.onresize=function(){e()}}();</script>
+    <style type="text/css">*,html *{-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent}*,article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}a,a:active{text-decoration:none}:focus,html *{outline:0}*,input[type=button],input[type=submit],input[type=reset],input[type=disabled]{-webkit-appearance:none}*,ol,ul{list-style:none}.return_top,a{cursor:pointer}html{height:100%;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}*{vertical-align:baseline;background:0 0;-webkit-touch-callout:none}.bgc_w,body{background-color:#fff}body,html{font-family:sans-serif}body{min-height:100%;width:100%;overflow:visible;overflow-x:hidden;position:relative;font-family:"Hiragino Sans GB W3","\5FAE\8F6F\96C5\9ED1","\5b8b\4f53"}.container,.main,div{margin:0 auto}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block}img{border:0;vertical-align:middle}a{color:#303030}::-moz-focus-inner{border:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none!important}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}input[type=number],input[type=text]{border-radius:0}body div{box-sizing:border-box;vertical-align:top}.fl{float:left}.fr{float:right}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@media only screen and (min-width:750px){html{font-size:75px}body{width:750px;margin:0 auto}}.pageview{top:0;left:0;width:100%;min-width:320px;height:100%;color:#7d7d7d;font-size:12px}.container{width:100%;max-width:750px}.main{max-width:750px;padding-bottom:1.333rem}.bgc_w_dark{background-color:#fbfbfb}.bgc_y{background-color:#ffec3e}.bgc_o{background-color:#fdac25}.bgc_b{background-color:#3d32ab}.bgc_g{background-color:#eee}.hylg_ico{background:url(http://oiu3g8jom.bkt.clouddn.com/img/hylg_ico.png) no-repeat;background-size:6.667rem 5.333rem}.hylg_ico.deposit{width:1.093rem;height:1.093rem;background-position:0 0}.hylg_ico.newest{width:1.093rem;height:1.093rem;background-position:-1.334rem 0}.hylg_ico.shows{width:1.12rem;height:1.12rem;background-position:-2.64rem 0}.hylg_ico.help{width:1.12rem;height:1.12rem;background-position:-3.974rem 0}.hylg_ico.ho{width:.68rem;height:.64rem;background-position:0 -2rem}.hylg_ico.cat{width:.627rem;height:.627rem;background-position:-1.334rem -2rem}.hylg_ico.my{width:.6rem;height:.6rem;background-position:-2.667rem -2rem}.hylg_ico.back{width:.293rem;height:.507rem;background-position:-3.974rem -2rem}.hylg_ico.setting{width:.507rem;height:.48rem;background-position:-3.974rem -4rem}.hylg_ico.pic{width:.507rem;height:.44rem;background-position:-2.64rem -3.334rem}.hylg_ico.cam{width:.533rem;height:.453rem;background-position:-3.974rem -2.667rem}.hylg_ico.clo{width:.507rem;height:.507rem;background-position:-3.974rem -3.334rem}.hylg_ico.right_arrow{width:.213rem;height:.333rem;background-position:-5.334rem -2.667rem}.selected .ho{background-position:0 -1.334rem}.selected .cat{background-position:-1.334rem -1.334rem}.selected .my{background-position:-2.667rem -1.334rem}.bottom_fixed_menu{position:fixed;bottom:0;left:0;z-index:10;width:100%;height:1.333rem;border-top:1px solid #efefef;background-color:#fff}.bottom_fixed_menu li{float:left;width:33.33%;display:block;text-align:center;height:1.333rem}.bottom_fixed_menu li a{width:100%;height:100%;font-size:.267rem;color:#aaa;display:-webkit-box;-webkit-box-align:center;-webkit-box-pack:center}.bottom_fixed_menu li a.selected{color:#e71f23}.bottom_fixed_menu li .hylg_ico{display:inline-block}.return_top{display:none;position:fixed;bottom:1.8rem;right:.44rem;z-index:120}.return_top .rtt{width:.8rem;height:.8rem;background-position:right top;display:block}.header{width:100%;height:1.2rem;position:relative}.header.fixed{position:fixed;border-bottom:none;top:0;left:0;z-index:10}.header.fixed .container{position:relative;height:1.2rem;background-color:#e71f23}.header .back{position:absolute;display:block;width:.293rem;height:.507rem;left:.4rem;top:.333rem}.header .title{display:block;color:#fff;font-size:.427rem;line-height:1.2rem;text-align:center}</style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3f796b398b088d897a22e0e437ee603e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  </body>
+</html>
