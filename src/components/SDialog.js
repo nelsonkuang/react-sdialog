@@ -105,9 +105,13 @@ class SDialog extends Component {
 
   destroy() {
     if (this._el) {
-      ReactDOM.unmountComponentAtNode(this._el)
-      document.body.removeChild(this._el)
-      this._el = null
+      this._el.querySelector('.sdialog__mask').classList.add('maskFadeOut')
+      this._el.querySelector('.sdialog__wrapper').classList.add('wrapperFadeOutUp')
+      setTimeout(()=>{
+        ReactDOM.unmountComponentAtNode(this._el)
+        document.body.removeChild(this._el)
+        this._el = null
+      }, 150)
     }
   }
 
@@ -133,9 +137,9 @@ class SDialog extends Component {
     } = this.props;
 
     return (
-      <div className="sdialog">
-        <div className="sdialog__mask" style={{height: (document.body.offsetHeight > window.screen.height ? document.body.offsetHeight : window.screen.height) + 'px'}} />
-        <div className={'sdialog__wrapper sdialog__wrapper--skin-' + skin} style={{left:'50%', top: (window.screen.height/2 - 60) + 'px', width: width + 'px', marginLeft: (width*(-1)/2) + 'px'}} >
+      <div className="sdialog" key="sdialog">
+        <div className="sdialog__mask maskFadeIn sdialog_animated" style={{height: (document.body.offsetHeight > window.screen.height ? document.body.offsetHeight : window.screen.height) + 'px'}} />
+        <div className={'sdialog__wrapper wrapperFadeInDown sdialog_animated sdialog__wrapper--skin-' + skin} style={{left:'50%', top: (window.screen.height/2 - 60) + 'px', width: width + 'px', marginLeft: (width*(-1)/2) + 'px'}} >
           <div className="sdialog__content"
             dangerouslySetInnerHTML={{
               __html: content
