@@ -53,9 +53,7 @@ class SDialog extends Component {
       if(!okBtn || !cancelBtn){
         setTimeout(()=> {
           this.destroy()
-          if (onDestroy) {
-            onDestroy()
-          }
+          onDestroy && onDestroy()
         }, autoTime)
       }
     }
@@ -74,9 +72,7 @@ class SDialog extends Component {
       if(!okBtn && !cancelBtn){
         setTimeout(()=> {
           this.destroy()
-          if (onDestroy) {
-            onDestroy()
-          }
+          onDestroy && onDestroy()
         }, autoTime)
       }
     }
@@ -84,22 +80,16 @@ class SDialog extends Component {
 
   componentWillUnmount() {
     this.destroy()
-    if (this.props.onDestroy) {
-      this.props.onDestroy()
-    }
+    this.props.onDestroy && this.props.onDestroy()
   }
 
   onOk() {
-    if (this.props.onOk) {
-      this.props.onOk()
-    }
+    this.props.onOk && this.props.onOk()
     this.destroy()
   }
 
   onCancel() {
-    if (this.props.onCancel) {
-      this.props.onCancel()
-    }
+    this.props.onCancel && this.props.onCancel()
     this.destroy()
   }
 
